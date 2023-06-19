@@ -15,7 +15,17 @@ font-family: (h1, h2,...)
 font-family: (p)
 */
 
+ul{
+	list-style-type: none;
+	padding: 0;
+}
 
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
 
 /*------------HEADER--------------*/
 .flex-nav{
@@ -65,21 +75,16 @@ footer{
     text-align: center;
 }
 
-/*------POSITIONNEMENT GRDID------*/
+/*------POSITIONNEMENT MOSAIQUE------*/
 
-.grid-container{
+.grid-container-mos{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(4, 1fr);
 	gap: 15px;
 }
 
-ul{
-	list-style-type: none;
-	padding: 0;
-}
-
-.grid-container img{
+.grid-container-mos img{
 	width: 100%;
 }
 
@@ -91,5 +96,64 @@ ul{
 #mos6{
 	grid-row: 3 / 5;
 	grid-column: 2 / 4;
+}
 
+/*-------POSITIONNEMENT COMMANDE---------*/
+
+.flex-container-com{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	width: 70%;
+
+}
+
+.flex-item{
+	box-sizing: border-box;
+}
+
+.btn-commander{
+	background-color: black;
+	color: white;
+	padding: 0 20px;
+}
+
+.btn-panier{
+	padding: 12px 20px;
+	background-color:black; 
+	color: white;
+}
+
+.flex-container-com ul, .flex-container-detail ul{
+	line-height: 40px;
+}
+
+.flex-container-detail{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	width: 30%;
+}
+
+.orange-background{
+	background-color: #e76836;
+}
+
+.flex-t-shirt{
+	box-sizing: border-box;
+	width: 50%;
+	align-items: baseline;
+}
+
+#t-shirt{
+	padding-top: 30px;
+}
+
+#ma-commande{
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
