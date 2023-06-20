@@ -29,7 +29,99 @@
 	</header>
 
 	<main>
+		<h2>RÉSERVEZ EN LIGNE!</h2>
+		<form action="confirmation.html" method="post" class="flex-form">
+			<fieldset class="width50">
+				<legend>Contact</legend>
+				<div class="etiquette">
+					<label for="txtPrenom">Prénom</label>
+					<input type="text" id="txtPrenom" name="txtPrenom" required>
+				</div>
+				<div class="etiquette">
+					<label for="txtNom">Nom</label>
+					<input type="text" id="txtNom" name="txtNom" required>
+				</div>
+				<div class="etiquette">
+					<label for="telContact">Téléphone</label>
+					<input type="tel" name="telContact" id="telContact" placeholder="000-000-0000" required>
+				</div>
+				<div class="etiquette">
+					<label for="mailContact">Courriel (facultatif)</label>
+					<input type="email" name="mailContact" id="mailContact" placeholder="xyz@mail.com">
+				</div>
+				<div>
+					<input type="checkbox" name="chkbox" id="chkbox">
+					<label for="chkbox">M'abonner à l'infolettre</label>
+				</div>
+		</fieldset>
+		
+		<fieldset class="width50">
+			<legend>Détails de la réservation</legend>
+				<div class="etiquette">
+					<label for="nbrPersonnes">Nombre de personnes</label>
+					<input type="number" name="nbrPersonnes" id="nbrPersonnes" value="1" min="1" max="10" class="width50" required>
+				</div>
+				<div class="etiquette">
+					<label for="dateReservation">Date de la réservation</label>
+					<input type="date" name="dateReservation" id="dateReservation" class="width50" required>
+				</div>
+				<div class="etiquette">
+					<label class="marg-bot">Choisissez un lieu (facultatif)</label>
+					<div>
+						<input type="radio" name="radioLieu" id="radioSalle" value="salle">
+						<label for="radionHeure1">Salle à manger</label>
+					</div>
+					<div>
+						<input type="radio" name="radioLieu" id="radioTerrasse" value="terrasse">
+						<label for="radionHeure1">Terrasse</label>
+					</div>
+				</div>
+				<div class="etiquette">
+					<label for="selHeure">Heure de la réservation</label>
+					<select class="width50" name="selHeure" id="selHeure" required>
+						<option value="">Choisir une heure</option>
+						<option value="12:00">12:00</option>
+						<option value="12:30">12:30</option>
+						<option value="13:00">13:00</option>
+						<option value="13:30">13:30</option>
+						<option value="17:00">17:00</option>
+						<option value="17:30">17:30</option>
+						<option value="18:00">18:00</option>
+						<option value="18:30">18:30</option>
+						<option value="19:00">19:00</option>
+						<option value="19:30">19:30</option>
+						<option value="20:00">20:00</option>
+						<option value="20:30">20:30</option>
+						<option value="21:00">21:00</option>
+					</select>
+				</div>
+				<div class="etiquette">
+					<label for="txtCommentaire">Commentaire supplémentaire (factulatif)</label>
+					<textarea name="txtArea" id="txtCommentaire"></textarea>
+				</div>
+				<div>
+					<input class="btn" type="submit" name="btnSubmit" id="btnSubmit" value="Soumettre">
+				</div>
+		</fieldset>
+		
+		
 
+		
+		
+		
+
+		
+
+		
+
+		
+
+
+		
+		
+
+		</form>
+	
 	</main>
 
 	<footer class="footer">
