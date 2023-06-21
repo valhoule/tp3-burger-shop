@@ -19,8 +19,8 @@
 				<ul>
 					<li><a href="index.html">Menu</a></li>
 					<li><a href="page-reservation.html">Réservation</a></li>
-					<li class="actuelle"><a href="page-restaurant.html">Restaurant</a></li>
-					<li><a href="page-commande.html">Ma commande</a></li>
+					<li><a href="page-restaurant.html">Restaurant</a></li>
+					<li class="actuelle"><a href="page-commande.html">Ma commande</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -28,55 +28,63 @@
 
 	<main>
 		<h1>MA COMMANDE</h1>
-		<section id="ma-commande">
-		<div>
+		<section id="ma-commande" class="flex-btw">
+		<div class="width70">
 			<h2>Burgers</h2>
 			<div class="flex-container-com">
-				<ul class="flex-item">
+				<ul>
 					<li>Le Commodo | 9,99$</li>
 					<li>Le Lorem | 12,99$</li>
 				</ul>
-				<ul class="flex-item">
+				<ul>
 					<li>Quantité : 1</li>
 					<li>Quantité : 1</li>
 				</ul>
 			</div>
 			<h2>Beignes</h2>
-			<div class="flex-container-com">
-				<ul class="flex-item">
+			<div class="flex-container-com" >
+				<ul>
 					<li>Le Etiam | 3,99$</li>
 					<li>Le Maximus | 2,99$</li>
 				</ul>
-				<ul class="flex-item">
+				<ul>
 					<li>Quantité : 1</li>
 					<li>Quantité : 1</li>
 				</ul>
 			</div>
 		</div>	
-		<div>
+		<div class="width30">
 			<h2>Détails</h2>
-			<div class="flex-container-detail">		
-				<ul class="flex-item">
+			<div class="flex-container-com">		
+				<ul>
 					<li><b>Sous-total</b></li>
 					<li><b>Taxes</b></li>
-					<li><b>Total</b></li>
-					<li class="btn-commander">Commander</li>
 				</ul>
-				<ul class="flex-item">
-					<li>29,96$</li>
-					<li>4,49$</li>
-					<li>34,45$</li>
+				<ul>
+					<li class="txt-right">29,96 $</li>
+					<li class="txt-right">4,49 $</li>
 				</ul>
+			</div>
+			<div class="flex-container-com-total">
+				<ul>
+					<li><b>TOTAL</b></li>
+				</ul>
+				<ul class="txt-right">
+					<li>34,45 $</li>
+				</ul>
+			</div>
+			<div class="flex-container-com-total">
+				<a class="btn-commander" href="">Commander</a>
 			</div>
 		</div>
 		</section>
 
 		<section id="t-shirt">
-				<div class="flex-container">
+				<div class="flex-container-t-shirt">
 					<div class="flex-t-shirt">
 						<h2>LE T-SHIRT BURGER SHOP</h2>
 						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-						<a class="btn-panier" href="">Ajouter au panier</a>
+						<a class="btn" href="">Ajouter au panier</a>
 					</div>
 					<div>
 						<img src="img/t-shirt.png" alt="">
