@@ -1,5 +1,5 @@
 /*FONT*/
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400&display=swap');
 
 *{ box-sizing: border-box;}
 
@@ -9,13 +9,27 @@
 	margin: 0 auto;
 }
 
+
 /*------------ GÉNÉRAL ------------*/
 /*
-font-family: (h1, h2,...)
-font-family: (p)
+    font-family: 'Anton', sans-serif; (h1, h2, ...)
+    font-family: 'Poppins', sans-serif; (p)
 */
 
+h3{
+	font-size: 1.8em;
+	color: #2b2e2f;
+}
 
+h2{
+	font-size: 2.3em;
+	color: #ba252a;
+}
+
+h1{
+	font-size: 2.5em;
+	color: #2b2e2f;
+}
 
 ul{
 	list-style-type: none;
@@ -24,24 +38,29 @@ ul{
 
 .btn{
 	padding: 12px 20px;
-	background-color:black; 
+	background-color:#ba252a; 
 	color: white;
 	max-width: 200px;
 	text-decoration: none;
-	font-variant: small-caps;
+	font-size: 1.2em;
+	font-family: 'Poppins', sans-serif;
+	border: none;
 }
 
 .btn:hover{
-	background-color: #e76836;
-	color: black;
+	background-color: #f8b20a;
+	color: #2b2e2f;
 	text-decoration: underline;
 }
 
+h1, h2, h3 {
+	font-family: 'Anton', sans-serif;
+}
 
 /*------------HEADER--------------*/
 
 header{
-	background-color: aqua;
+	background-color: #f8b20a;
 }
 
 .flex-nav{
@@ -50,32 +69,47 @@ header{
 	justify-content: space-between;
 }
 
-nav ul{	padding: 0;}
-
-nav li{
-	display: inline-block;
-	font-size: 1.3em;
-	font-weight: bold;
-}
-
-nav a{
-	color: #e76836;
-	text-decoration: none;
-	padding: 5px 10px;
-}
-
 .flex-nav img{
-	border-radius: 10%;
 	padding-top: 10px;
 }
 
+nav li{
+	display: inline-block;
+	font-size: 1.7em;
+	font-weight: bold;
+	padding: 15px;
+	font-family: 'Anton', sans-serif;;
+}
+
+nav a{
+	color: #2b2e2f;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.btn-commande{
+	background-color: #ba252a;
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+	font-family: 'Anton', sans-serif;;
+}
+
+.btn-commande:hover{
+	color: #f8b20a;
+	background-color: #2b2e2f;
+}
+
 nav a:hover{
-	color: black;
+	color: #ba252a;
 	text-decoration: none;
 }
 
 .actuelle{
-	border: 2px solid;}
+	font-weight: bold;
+	border: 2px solid #ba252a;
+	padding: 15px;
+}
 
 
 /*-----------FOOTER----------*/
@@ -145,8 +179,16 @@ footer{
 	line-height: 40px;
 }
 
-.orange-background{
-	background-color: #e76836;
+#ma-commande{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#ma-commande li{
+	color: #2b2e2f;
+	font-size: 1.2em;
+	font-family: 'Poppins', sans-serif;
+	font-weight: light;
 }
 
 .width70{
@@ -155,7 +197,7 @@ footer{
 
 .width30{
 	width: 27%;
-	background-color: yellow;
+	background-color: #f8b20a;
 	padding: 15px;
 }
 
@@ -180,12 +222,13 @@ footer{
 }
 
 #t-shirt{
-	padding-top: 30px;
+	padding-top: 50px;
 }
 
-#ma-commande{
-	padding-top: 30px;
-	padding-bottom: 30px;
+#t-shirt p{
+	font-size: 1.3em;
+	font-family: 'Poppins', sans-serif;
+	font-weight: lighter;
 }
 
 /*-----FORMULAIRE RÉSERVATION-----*/
@@ -207,13 +250,13 @@ footer{
 }
 
 .rouge{
-	color: red;
+	color: #ba252a;
 }
 
 input, textarea{
 	font-size: 1.2rem;
-	color: red;
-	border: 1px solid orangered;
+	color: #2b2e2f;
+	border: 1.5px solid #2b2e2f;
 }
 
 input{
@@ -221,22 +264,52 @@ input{
 }
 
 input:focus{
-	background-color: aqua;
+	background-color: #f8b20a;
+	border: 2px solid #ba252a;
 }
 #selHeure{
-	font-size: 1.2rem;
-	color: red;
-	border: 1px solid orangered;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: lighter;
+	color:#2b2e2f;
+	border: 1px solid #2b2e2f;
 	padding: 10px 20px;
 }
 
+#dateReservation{
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: lighter;
+	color:#2b2e2f;
+	border: 1px solid #2b2e2f;
+	padding: 10px 20px;
+}
+
+#nbrPersonnes{
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	color:#2b2e2f;
+	font-weight: lighter;
+	border: 1px solid #2b2e2f;
+	padding: 10px 20px;
+}
+
+input::placeholder{
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	color:#2b2e2f;
+	font-weight: lighter;
+}
+
 #selHeure:focus{
-	background-color: aqua;
+	background-color:#f8b20a;
 }
 
 label{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	padding-bottom: 5px;
+	font-family: 'Poppins', sans-serif;
+	color: #2b2e2f;
 }
 
 textarea{
@@ -252,13 +325,15 @@ textarea{
 fieldset{
 	margin-bottom: 30px;
 	padding: 20px;
-	border: 3px solid greenyellow;
+	border: 3px solid #f8b20a;
 }
 
 fieldset legend{
 	font-size: 1.5rem;
+	font-family: 'Poppins', sans-serif;
 	margin-bottom: 25px;
 	margin-top: 25px;
+	color: #2b2e2f;
 }
 
 
@@ -274,8 +349,13 @@ fieldset legend{
 .flex-menu{
 	box-sizing: border-box;
 	text-align: center;
-	padding-bottom: 50px;
-	line-height: 2rem;
+	padding-bottom: 60px;
+	line-height: 1.3rem;
+}
+
+.flex-container-menu p{
+	font-size: 2.5em;
+	font-family: 'Poppins', sans-serif;
 }
 
 /*----------MEDIA QUERIES---------*/

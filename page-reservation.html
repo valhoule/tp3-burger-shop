@@ -11,28 +11,28 @@
 	<link rel="icon" href="img/favicon.png">
 </head> 
 
-<body class="container">
+<body>
 	<header>
-		<div>
-			<div class="flex-nav">
-				<a href="index.html"> <img src="img/logo.png" alt="Accueil"></a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Menu</a></li>
-						<li class="actuelle"><a href="page-reservation.html">Réservation</a></li>
-						<li><a href="page-restaurant.html">Restaurant</a></li>
-						<li><a href="page-commande.html">Ma commande</a></li>
-					</ul>
-				</nav>
-			</div>
+		<div class="container">
+		<div class="flex-nav">
+			<a href="index.html"> <img src="img/logo.png" alt="Accueil"></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">menu</a></li>
+					<li><a class="actuelle" href="page-reservation.html">réservation</a></li>
+					<li><a href="page-restaurant.html">restaurant</a></li>
+					<li><a class="btn-commande" href="page-commande.html">ma commande</a></li>
+				</ul>
+			</nav>
+		</div>
 		</div>
 	</header>
 
-	<main>
-		<h2>RÉSERVEZ EN LIGNE!</h2>
+	<main class="container">
+		<h2>RÉSERVEZ EN LIGNE</h2>
 		<form action="confirmation.html" method="post" class="flex-form">
 			<fieldset class="width50">
-				<legend>Contact</legend>
+				<legend><b>Vos informations</b></legend>
 				<div class="etiquette">
 					<label for="txtPrenom">Prénom</label>
 					<input type="text" id="txtPrenom" name="txtPrenom" required>
@@ -100,7 +100,7 @@
 					<textarea name="txtArea" id="txtCommentaire"></textarea>
 				</div>
 				<div>
-					<input class="btn" type="submit" name="btnSubmit" id="btnSubmit" value="Soumettre">
+					<input class="btn" type="submit" name="btnSubmit" id="btnSubmit" value="soumettre">
 				</div>
 		</fieldset>
 		
