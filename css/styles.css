@@ -191,7 +191,7 @@ footer{
 /*-----FORMULAIRE RÉSERVATION-----*/
 
 .width50{
-	width: 45%;
+	width: 48%;
 }
 
 .etiquette{
@@ -203,7 +203,7 @@ footer{
 
 .flex-form{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .rouge{
@@ -296,6 +296,18 @@ fieldset legend{
 		grid-column: 2 / 3;
 		grid-row: 2 / 3;
 	}
+
+	.flex-form{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.width50{
+		min-width: 75%;
+	}
+
 }
 
 
@@ -313,6 +325,10 @@ fieldset legend{
 	#mos6{
 		grid-column: 1 / 2;
 		grid-row: 2 / 3;
+	}
+
+	.width50{
+		min-width: 75%;
 	}
 
 }
