@@ -22,12 +22,14 @@ ul{
 	padding: 0;
 }
 
-.flex-container{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: stretch;
+.btn{
+	padding: 12px 20px;
+	background-color:black; 
+	color: white;
+	max-width: 200px;
+	border: solid black 2px;
 }
+
 
 /*------------HEADER--------------*/
 .flex-nav{
@@ -48,6 +50,11 @@ nav a{
 	color: #e76836;
 	text-decoration: none;
 	padding: 5px 10px;
+}
+
+.flex-nav img{
+	border-radius: 10%;
+	padding-top: 10px;
 }
 
 nav a:hover{
@@ -105,29 +112,30 @@ footer{
 .flex-container-com{
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	justify-content: space-between;
 	border-bottom: 2px solid black;
+}
+
+.flex-container-com-total{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 10px;
 }
 
 .flex-btw{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .btn-commander{
 	background-color: black;
 	color: white;
-	padding: 0 20px;
+	padding: 12px 20px;
 }
 
-.btn{
-	padding: 12px 20px;
-	background-color:black; 
-	color: white;
-	max-width: 200px;
-	border: solid black 2px;
-}
 
 .flex-container-com ul{
 	line-height: 40px;
@@ -138,22 +146,33 @@ footer{
 }
 
 .width70{
-	width: 65%;
+	width: 67%;
 }
 
 .width30{
-	width: 25%;
+	width: 27%;
 	background-color: yellow;
+	padding: 15px;
 }
 
 .txt-right{
 	text-align: right;
 }
 
+.flex-container-t-shirt{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .flex-t-shirt{
 	box-sizing: border-box;
 	width: 50%;
-	align-items: baseline;
+}
+
+.flex-t-shirt p{
+	padding-bottom: 30px;
 }
 
 #t-shirt{
@@ -236,4 +255,26 @@ fieldset legend{
 	font-size: 1.5rem;
 	margin-bottom: 25px;
 	margin-top: 25px;
+}
+
+
+/*------ PAGE MENU INDEX -------*/
+
+.flex-container-menu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.flex-menu{
+	box-sizing: border-box;
+	text-align: center;
+	padding-bottom: 50px;
+	line-height: 2rem;
+
+}
+
+.flex-menu img{
+	margin: 0.5px;
 }
