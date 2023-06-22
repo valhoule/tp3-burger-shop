@@ -247,7 +247,7 @@ footer{
 	color: #2b2e2f;
 	font-size: 1.2em;
 	font-family: 'Poppins', sans-serif;
-	font-weight: light;
+	font-weight: lighter;
 }
 
 .btn-commander{
@@ -284,7 +284,7 @@ footer{
 
 .flex-container-t-shirt{
 	display: flex;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -313,7 +313,6 @@ footer{
 	font-family: 'Poppins', sans-serif;
 	font-weight: lighter;
 }
-
 
 
 /*-----FORMULAIRE RÉSERVATION-----*/
@@ -421,6 +420,10 @@ fieldset legend{
 	color: #2b2e2f;
 }
 
+#btn-confirmation{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
 
 /*------ PAGE MENU INDEX -------*/
 
