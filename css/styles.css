@@ -119,22 +119,75 @@ nav a:hover{
 
 
 /*-----------FOOTER----------*/
-/*
-.flex-footer{	
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-*/
 
 footer{
-	padding-top: 15px;
 	padding-bottom: 15px;
-	background-color: black;
-	color: whitesmoke;
-	font-size: 0.8em;
-    text-align: center;
+	background-color: #f8b20a;
 }
+
+.flex-footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #2b2e2f;
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+
+.flex-footer-t-shirt{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+
+.contact-black{
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2em;
+	color: #2b2e2f;
+}
+
+.contact{
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2em;
+	color: white;
+}
+
+.btn-tel{
+	padding: 10px 25px;
+	background-color: #ba252a;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-family: 'Poppins', sans-serif;
+}
+
+.btn-tel:hover{
+	background-color: #f8b20a;
+	color: #2b2e2f;
+	text-decoration: underline;
+}
+
+#footer-black{
+	background-color: #2b2e2f;
+}
+
+#footer-white{
+	background-color: white;
+}
+
+.mon-nom{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 0px ;
+	font-family: 'Poppins', sans-serif;
+}
+
 
 /*------PAGE RESTAURANT - MOSAIQUE------*/
 
@@ -252,7 +305,7 @@ footer{
 
 #t-shirt{
 	padding-top: 50px;
-	background-color:#2b2e2f;
+	background-color: #2b2e2f;
 }
 
 #t-shirt p{
@@ -260,6 +313,8 @@ footer{
 	font-family: 'Poppins', sans-serif;
 	font-weight: lighter;
 }
+
+
 
 /*-----FORMULAIRE RÉSERVATION-----*/
 
