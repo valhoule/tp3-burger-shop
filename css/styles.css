@@ -88,6 +88,10 @@ nav a{
 	padding: 15px;
 }
 
+#menu-mobile{
+	display: none;
+}
+
 .btn-commande{
 	background-color: #ba252a;
 	color: white;
@@ -97,7 +101,8 @@ nav a{
 }
 
 .btn-commande:hover{
-	color: #f8b20a;
+	color: white;
+	text-decoration: underline;
 	background-color: #2b2e2f;
 }
 
@@ -190,6 +195,24 @@ footer{
 	font-size: 1.2em;
 	font-family: 'Poppins', sans-serif;
 	font-weight: light;
+}
+
+.btn-commander{
+	padding: 12px 20px;
+	background-color:#ba252a; 
+	color: white;
+	max-width: 200px;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-family: 'Poppins', sans-serif;
+	border: none;
+	text-align: center;
+}
+
+.btn-commander:hover{
+	background-color: #2b2e2f;
+	color: white;
+	text-decoration: underline;
 }
 
 .width70{
@@ -368,7 +391,6 @@ fieldset legend{
 /*----------MEDIA QUERIES---------*/
 
 
-
 @media screen and (max-width: 1200px) {
 	.grid-container-mos{
 		grid-template-columns: 1fr 1fr 1fr;
@@ -411,6 +433,11 @@ fieldset legend{
 		padding-top: 30px;
 		width: 70%;
 	}
+
+	nav li{
+		padding: 0px;
+	}
+
 }
 
 
@@ -457,6 +484,14 @@ fieldset legend{
 
 	.flex-container-t-shirt img{
 		padding-top: 30px;
+	}
+
+	#menu-mobile{
+		display: block !important;
+	}
+
+	nav li{
+		display: none !important;
 	}
 
 
