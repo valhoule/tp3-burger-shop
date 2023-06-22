@@ -45,6 +45,7 @@ ul{
 	font-size: 1.2em;
 	font-family: 'Poppins', sans-serif;
 	border: none;
+	text-align: center;
 }
 
 .btn:hover{
@@ -207,7 +208,7 @@ footer{
 
 .flex-container-t-shirt{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: no-wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -219,10 +220,16 @@ footer{
 
 .flex-t-shirt p{
 	padding-bottom: 30px;
+	color: white;
+}
+
+.flex-t-shirt h2{
+	color: #f8b20a;
 }
 
 #t-shirt{
 	padding-top: 50px;
+	background-color:#2b2e2f;
 }
 
 #t-shirt p{
@@ -364,7 +371,7 @@ fieldset legend{
 
 @media screen and (max-width: 1200px) {
 	.grid-container-mos{
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
 	#mos1{
@@ -388,11 +395,76 @@ fieldset legend{
 		min-width: 75%;
 	}
 
+	.flex-container-t-shirt{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.flex-t-shirt{
+		text-align: center;
+		width: 90%;
+	}
+
+	.flex-container-t-shirt img{
+		padding-top: 30px;
+		width: 70%;
+	}
 }
 
 
 @media screen and (max-width: 960px) 
 {
+	.grid-container-mos{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#mos1{
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+	}
+
+	#mos6{
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+	}
+
+	.flex-btw{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.width30{
+		width: 67%;
+	}
+
+	.width70{
+		width: 67%;
+	}
+
+	.flex-container-com{
+		margin-bottom: 30px;
+	}
+
+
+	.flex-t-shirt{
+		text-align: center;
+		width: 90%;
+	}
+
+	.flex-container-t-shirt img{
+		padding-top: 30px;
+	}
+
+
+}
+
+@media screen and (max-width: 570px) 
+{
+	
 	.grid-container-mos{
 		grid-template-columns: 1fr;
 	}
@@ -406,14 +478,4 @@ fieldset legend{
 		grid-column: 1 / 2;
 		grid-row: 2 / 3;
 	}
-
-	.width50{
-		min-width: 75%;
-	}
-
-}
-
-@media screen and (min-width: 450px) and (max-width: 570px) 
-{
-	
 }
